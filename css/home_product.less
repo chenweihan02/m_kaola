@@ -1,3 +1,5 @@
+@import url(./variables.less);
+
 .product {
 	display: flex;
 	flex-wrap: wrap;
@@ -28,6 +30,14 @@
 			.company {
 				text-indent: 4.8vw;
 				background: url(../img/company_01.png) no-repeat left center/4vw 4vw;
+			}
+			
+			.price {
+				color: @mainColor;
+				
+				span {
+					font-size: 4.8vw;
+				}
 			}
 		}
 	}

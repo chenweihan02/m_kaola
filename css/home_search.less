@@ -1,0 +1,50 @@
+@import url(./variables.less);
+
+.search {
+	display: flex;
+	align-items: center;
+	height: 10.6667vw;
+	padding: 0 1.3333vw;
+	background-color: #fff;
+	
+	.left {
+		display: flex;
+		align-items: center;
+		flex: 1;
+		height: 7.4667vw;
+		border-radius: 4vw;
+		background-color: #fff;
+		border: 1px solid @mainColor;
+		
+		.icon {
+			width: 3.2vw;
+			height: 3.2vw;
+			margin: 0 1.3333vw 0 2.6667vw;
+			background: url(../img/search_icon.png) no-repeat center/3.2vw 3.2vw;
+		}
+		
+		.input {
+			height: 3.2vw;
+			line-height: 3.2vw;
+			margin: 0 32px 0 6px;
+			color: #999;
+		}
+	}
+	
+	
+	.right {
+		margin-left: 2vw;
+		padding-right: 2vw;
+		.login-box {
+			width: 16vw;
+			text-align: center;
+			line-height: 7.4667vw;
+			color: @mainColor;
+			font-size: @smallFontSize;
+			background-color: #fff;
+			border: 1px solid;
+			box-sizing: border-box;
+			border-radius: .8vw;
+		}
+	}
+}
