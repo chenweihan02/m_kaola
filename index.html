@@ -54,8 +54,6 @@
 				</div>
 			</div>
 			
-			
-			
 			<!-- 补贴 -->
 			<div class="subsidy">
 				<div class="header">
@@ -223,6 +221,28 @@
 		<!-- <div class="category"></div> -->
 		<!-- <div class="cart"></div> -->
 		<!-- <div class="profile"></div> -->
+	
+	
+		<script>
+			// 硬核补贴倒计时  当日的24:00:00
+			var timeEl = document.querySelector('.time')
+			var hourEl = timeEl.children[0]
+			var minuteEl = timeEl.children[2]
+			var secondEl  = timeEl.children[4]
+			
+			var endDate = new Date()
+			endDate.setHours(24)
+			endDate.setMinutes(0)
+			endDate.setSeconds(0)
+			
+			setInterval(function() {
+				var startDate = new Date()
+				var time = (endDate - startDate) / 1000;
+				hourEl.textContent = Math.floor(time / 3600)
+				minuteEl.textContent = Math.floor(time % 3600 / 60)
+				secondEl.textContent = Math.floor(time % 60)
+			}, 1000)
+		</script>
 	
 	</body>
 </html>
